@@ -1,0 +1,8 @@
+
+########## Node ##########
+node_modules/
+.expo/
+npm-debug.*
+
+########## IntelliJ ##########
+.idea
