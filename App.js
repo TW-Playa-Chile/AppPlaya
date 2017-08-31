@@ -40,11 +40,14 @@ export default class App extends React.Component {
     render() {
         return (
             <View style={{flex: 1, justifyContent: 'center'}}>
-                <TextInput
-                    onChangeText={(text) => this.setState({text})}
-                    value={this.state.text}
+                <View style={{padding: 10, borderBottomColor: '#000000', borderBottomWidth: 1 }}>
+                    <TextInput
+                        underlineColorAndroid={'transparent'}
+                        onChangeText={(text) => this.setState({text})}
+                        value={this.state.text}
 
-                />
+                    />
+                </View>
                 <View style={{padding: 10}}>
                     <Button
                         onPress={this._onPressSave}
