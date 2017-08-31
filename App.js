@@ -12,7 +12,7 @@ export default class App extends React.Component {
 
     async _onPressSave() {
         try {
-            let activityText = this.state.text;
+            let activityText = this.state.text.trim();
             await AsyncStorage.getItem('@ActivityStore:activities', (err, result) => {
                 let allActivities = [];
                 let storedActivities = JSON.parse(result);
